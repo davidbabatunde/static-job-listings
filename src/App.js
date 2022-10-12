@@ -17,8 +17,15 @@ function App() {
         {filterTags.length !== 0 && (
           <div id="filterBar">
             <div className="tags">
-              {filterTags.map((tag, i) => {
-                return <SingleFilter tag={tag} key={i} />;
+              {[...new Set(filterTags)].map((tag, i) => {
+                return (
+                  <SingleFilter
+                    tag={tag}
+                    filterTags={filterTags}
+                    setFilterTags={setFilterTags}
+                    key={i}
+                  />
+                );
               })}
             </div>
             <div onClick={() => setFilterTags([])}>
@@ -37,7 +44,12 @@ function App() {
           return (
             filterTags &&
             filterTags.every((tag) => allTags.includes(tag)) && (
-              <Card props={single} key={single.id} />
+              <Card
+                props={single}
+                filterTags={filterTags}
+                setFilterTags={setFilterTags}
+                key={single.id}
+              />
             )
           );
         })}

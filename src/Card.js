@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.scss";
 
-function Card({ props }) {
+function Card({ props, filterTags, setFilterTags }) {
   const { role, level, languages, tools } = props;
   const allTags = [role, level, ...languages, ...tools];
 
@@ -25,7 +25,14 @@ function Card({ props }) {
 
       <ul className="tags">
         {allTags.map((tag, index) => {
-          return <li key={index}>{tag}</li>;
+          return (
+            <li
+              onClick={() => setFilterTags([...filterTags, `${tag}`])}
+              key={index}
+            >
+              {tag}
+            </li>
+          );
         })}
       </ul>
     </div>
