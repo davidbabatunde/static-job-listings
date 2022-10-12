@@ -1,0 +1,21 @@
+$desatDarkCyan: hsl(180, 29%, 50%);
+$backgroundCyan: hsl(180, 52%, 96%);
+$filterTabCyan: hsl(180, 31%, 95%);
+$darkGrayCyan: hsl(180, 8%, 52%);
+$vDarkGrayCyan: hsl(180, 14%, 20%);
+
+.singleFilter {
+  display: flex;
+  height: 25px;
+  background-color: $filterTabCyan;
+  align-items: center;
+  padding-left: 0.5rem;
+  border-radius: 0.25rem;
+
+  img {
+    width: 25px;
+    background-color: $desatDarkCyan;
+    margin-left: 0.5rem;
+    padding: 0.4rem;
+  }
+}
