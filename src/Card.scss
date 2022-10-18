@@ -33,7 +33,7 @@ body {
   align-items: center;
 }
 
-#new {
+.new {
   color: white;
   background-color: $desatDarkCyan;
   padding: 0.5rem;
@@ -41,16 +41,12 @@ body {
   font-size: small;
 }
 
-#featured {
+.featured {
   font-size: small;
   color: white;
   background-color: $vDarkGrayCyan;
   padding: 0.5rem;
   border-radius: 0.75rem;
-}
-
-.featured {
-  border-left: 5px solid $desatDarkCyan;
 }
 
 #logo {
@@ -59,11 +55,11 @@ body {
   top: -25px;
 }
 
-#company {
+.company {
   font-weight: 700;
   color: $desatDarkCyan;
 }
-#position {
+.position {
   font-weight: 700;
   color: $vDarkGrayCyan;
 }
@@ -96,7 +92,7 @@ li:first-child {
   }
 }
 
-#cardTags:hover {
+.cardTags:hover {
   cursor: pointer;
   background-color: $desatDarkCyan;
   color: $filterTabCyan;

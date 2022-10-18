@@ -15,11 +15,11 @@ function Card({ props, filterTags, setFilterTags }) {
       <img id="logo" src={require(`${props.logo}`)} alt="Company Logo" />
       <div className="details">
         <div id="top">
-          <p id="company">{props.company}</p>
-          {props.new && <p id="new">NEW!</p>}
-          {props.featured && <p id="featured">FEATURED</p>}
+          <h3 className="company">{props.company}</h3>
+          {props.new && <p className="new">NEW!</p>}
+          {props.featured && <p className="featured">FEATURED</p>}
         </div>
-        <p id="position">{props.position}</p>
+        <h2 className="position">{props.position}</h2>
 
         <ul className="info">
           <li>{props.postedAt}</li>
@@ -34,7 +34,7 @@ function Card({ props, filterTags, setFilterTags }) {
         {allTags.map((tag, index) => {
           return (
             <li
-              id="cardTags"
+              className="cardTags"
               onClick={() => setFilterTags([...filterTags, `${tag}`])}
               key={index}
             >

@@ -48,6 +48,10 @@ $vDarkGrayCyan: hsl(180, 14%, 20%);
   }
 }
 
+p {
+  font-size: 1.25rem;
+}
+
 @media (min-width: 768px) {
   #bgMobile {
     display: none;
