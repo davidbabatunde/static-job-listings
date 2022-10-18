@@ -9,6 +9,9 @@ $vDarkGrayCyan: hsl(180, 14%, 20%);
   height: 140px;
   width: 100vw;
 }
+#bgDesktop {
+  display: none;
+}
 
 #bg > img {
   width: 100%;
@@ -42,5 +45,14 @@ $vDarkGrayCyan: hsl(180, 14%, 20%);
   }
   #clear:hover {
     text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) {
+  #bgMobile {
+    display: none;
+  }
+  #bgDesktop {
+    display: block;
   }
 }

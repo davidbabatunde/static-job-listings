@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./App.scss";
 import Card from "./Card";
 import data from "./data.json";
-import bg from "./images/bg-header-mobile.svg";
+import bgMobile from "./images/bg-header-mobile.svg";
+import bgDesktop from "./images/bg-header-desktop.svg";
 import SingleFilter from "./SingleFilter";
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
   return (
     <>
       <div id="bg">
-        <img src={bg} alt="background design" />
+        <img src={bgMobile} id="bgMobile" alt="background design" />
+        <img src={bgDesktop} id="bgDesktop" alt="background design" />
       </div>
 
       <div id="main">

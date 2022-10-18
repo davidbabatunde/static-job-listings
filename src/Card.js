@@ -6,7 +6,12 @@ function Card({ props, filterTags, setFilterTags }) {
   const allTags = [role, level, ...languages, ...tools];
 
   return (
-    <div className="card">
+    <div
+      className="card"
+      style={{
+        borderLeft: props.featured ? "5px solid hsl(180, 29%, 50%)" : null,
+      }}
+    >
       <img id="logo" src={require(`${props.logo}`)} alt="Company Logo" />
       <div className="details">
         <div id="top">
