@@ -12,7 +12,7 @@ function Card({ props, filterTags, setFilterTags }) {
         borderLeft: props.featured ? "5px solid hsl(180, 29%, 50%)" : null,
       }}
     >
-      <img id="logo" src={require(`${props.logo}`)} alt="Company Logo" />
+      <img className="logo" src={require(`${props.logo}`)} alt="Company Logo" />
       <div className="details">
         <div id="top">
           <h3 className="company">{props.company}</h3>
