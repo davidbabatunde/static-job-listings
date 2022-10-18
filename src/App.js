@@ -10,12 +10,12 @@ function App() {
   const [filterTags, setFilterTags] = useState([]);
   return (
     <>
-      <div id="bg">
+      <header>
         <img src={bgMobile} id="bgMobile" alt="background design" />
         <img src={bgDesktop} id="bgDesktop" alt="background design" />
-      </div>
+      </header>
 
-      <div id="main">
+      <main>
         {filterTags.length !== 0 && (
           <div id="filterBar">
             <div className="tags">
@@ -56,7 +56,7 @@ function App() {
             )
           );
         })}
-      </div>
+      </main>
     </>
   );
 }
