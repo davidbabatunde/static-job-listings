@@ -9,8 +9,9 @@ body {
 }
 
 .card {
+  width: 80vw;
   background-color: white;
-  margin: 3rem 2rem;
+  margin: 3rem auto;
   padding: 2rem 1rem;
   padding-top: 2.5rem;
   display: flex;
@@ -109,9 +110,12 @@ li:first-child {
     position: static;
     width: 90px;
   }
+  .details {
+    margin-right: auto;
+  }
   .card {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 2rem;
     gap: 2rem;

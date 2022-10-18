@@ -17,7 +17,7 @@ function App() {
         {filterTags.length !== 0 && (
           <div id="filterBar">
             <div className="tags">
-              {/* Converted to set to prevent tag reptitions */}
+              {/* Converted to set to ensure tags are unique */}
               {[...new Set(filterTags)].map((tag, i) => {
                 return (
                   <SingleFilter
