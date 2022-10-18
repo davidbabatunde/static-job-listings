@@ -24,7 +24,7 @@ $vDarkGrayCyan: hsl(180, 14%, 20%);
   z-index: 1;
   background-color: white;
   min-height: 50px;
-  width: 80vw;
+  width: calc(100% - 4rem);
   margin: 0 2rem;
   padding: 1rem;
   position: absolute;
@@ -34,4 +34,11 @@ $vDarkGrayCyan: hsl(180, 14%, 20%);
   justify-content: space-between;
   align-items: center;
   color: $desatDarkCyan;
+
+  #clear {
+    font-weight: 700;
+  }
+  #clear:hover {
+    text-decoration: underline;
+  }
 }

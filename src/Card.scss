@@ -20,6 +20,12 @@ body {
   position: relative;
 }
 
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 #top {
   display: flex;
   gap: 1rem;
@@ -85,5 +91,29 @@ li:first-child {
     background-color: $backgroundCyan;
     // margin: 0.5rem;
     padding: 0.5rem;
+    height: 2rem;
+  }
+}
+
+#cardTags:hover {
+  cursor: pointer;
+  background-color: $desatDarkCyan;
+  color: $filterTabCyan;
+}
+
+@media (min-width: 768px) {
+  hr {
+    display: none;
+  }
+  #logo {
+    position: static;
+    width: 90px;
+  }
+  .card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
   }
 }

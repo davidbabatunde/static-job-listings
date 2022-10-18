@@ -6,7 +6,7 @@ import bg from "./images/bg-header-mobile.svg";
 import SingleFilter from "./SingleFilter";
 
 function App() {
-  const [filterTags, setFilterTags] = useState(["React", "JavaScript"]);
+  const [filterTags, setFilterTags] = useState([]);
   return (
     <>
       <div id="bg">
@@ -17,6 +17,7 @@ function App() {
         {filterTags.length !== 0 && (
           <div id="filterBar">
             <div className="tags">
+              {/* Converted to set to prevent tag reptitions */}
               {[...new Set(filterTags)].map((tag, i) => {
                 return (
                   <SingleFilter
@@ -28,7 +29,7 @@ function App() {
                 );
               })}
             </div>
-            <div onClick={() => setFilterTags([])}>
+            <div id="clear" onClick={() => setFilterTags([])}>
               <p>Clear</p>
             </div>
           </div>
