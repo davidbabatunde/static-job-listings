@@ -14,7 +14,7 @@ function Card({ props, filterTags, setFilterTags }) {
     >
       <img className="logo" src={require(`${props.logo}`)} alt="Company Logo" />
       <div className="details">
-        <div id="top">
+        <div className="top">
           <h3 className="company">{props.company}</h3>
           {props.new && <p className="new">NEW!</p>}
           {props.featured && <p className="featured">FEATURED</p>}
