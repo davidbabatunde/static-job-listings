@@ -11,8 +11,14 @@ function App() {
   return (
     <>
       <header>
-        <img src={bgMobile} id="bgMobile" alt="background design" />
-        <img src={bgDesktop} id="bgDesktop" alt="background design" />
+        <picture>
+          <source
+            srcSet={bgDesktop}
+            media="(min-width: 768px)"
+            alt="background design"
+          />
+          <img src={bgMobile} alt="background design" />
+        </picture>
       </header>
 
       <main>
@@ -31,9 +37,10 @@ function App() {
                 );
               })}
             </div>
-            <div id="clear" onClick={() => setFilterTags([])}>
-              <p>Clear</p>
-            </div>
+
+            <button id="clear" onClick={() => setFilterTags([])}>
+              Clear
+            </button>
           </div>
         )}
 

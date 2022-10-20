@@ -21,6 +21,12 @@ body {
   position: relative;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  background-color: unset;
+}
+
 .details {
   display: flex;
   flex-direction: column;
@@ -77,7 +83,6 @@ li:first-child {
 
 .tags {
   list-style-type: none;
-  color: $desatDarkCyan;
   font-weight: 700;
   display: flex;
   flex-flow: row wrap;
@@ -86,14 +91,19 @@ li:first-child {
   li {
     display: inline;
     background-color: $backgroundCyan;
-    // margin: 0.5rem;
-    padding: 0.5rem;
     height: 2rem;
   }
 }
 
-.cardTags:hover {
-  cursor: pointer;
+.tagBtn {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  color: $desatDarkCyan;
+  font-weight: 700;
+}
+
+.tagBtn:hover {
   background-color: $desatDarkCyan;
   color: $filterTabCyan;
 }

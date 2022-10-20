@@ -6,12 +6,12 @@ function SingleFilter({ tag, filterTags, setFilterTags }) {
   return (
     <div className="singleFilter">
       <p>{tag}</p>
-      <img
+      <button
         id="remove"
-        src={remove}
         onClick={() => setFilterTags(filterTags.filter((e) => e !== `${tag}`))}
-        alt="Remove"
-      />
+      >
+        <img src={remove} alt="Delete" />
+      </button>
     </div>
   );
 }

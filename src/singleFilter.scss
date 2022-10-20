@@ -12,14 +12,13 @@ $vDarkGrayCyan: hsl(180, 14%, 20%);
   padding-left: 0.5rem;
   border-radius: 0.25rem;
 
-  img {
-    width: 25px;
+  button {
+    height: 100%;
     background-color: $desatDarkCyan;
     margin-left: 0.5rem;
     padding: 0.4rem;
   }
-  img:hover {
-    cursor: pointer;
+  button:hover {
     background-color: $vDarkGrayCyan;
   }
 }
